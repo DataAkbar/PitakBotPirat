@@ -25,23 +25,6 @@ Haydovchi_kerak = ReplyKeyboardMarkup(
     # one_time_keyboard=True,
 )
 
-# --- Toshkent ichidagi tumanlar uchun
-t_viloyatlar = ReplyKeyboardMarkup(
-    keyboard=[
-        [KeyboardButton(text="Toshkent"), KeyboardButton(text="Surxondaryo")],
-        [KeyboardButton(text="Xorazm"), KeyboardButton(text="Buxoro")],
-        [KeyboardButton(text="Andijon"), KeyboardButton(text="Farg'ona")],
-        [KeyboardButton(text="Jizzax"), KeyboardButton(text="Qoshqidaryo")],
-        [KeyboardButton(text="Namangan"), KeyboardButton(text="Navoi")],
-        [KeyboardButton(text="Sirdaryo"), KeyboardButton(text="Samarqand")],
-        [KeyboardButton(text="Qoraqalpoqiston")],
-        [KeyboardButton(text="Bosh sahifa")],
-    ],
-    resize_keyboard=True,
-    # one_time_keyboard=True,
-)  
-
-
 # -- \\\ Toshkentni ichidagi shaharlar ///
 toshkent = ReplyKeyboardMarkup(
     keyboard=[
@@ -60,6 +43,115 @@ toshkent = ReplyKeyboardMarkup(
     # one_time_keyboard=True,
 )
 
+# Toshkent ichidagi Yunusobod
+yunusobod = ReplyKeyboardMarkup(
+    keyboard=[
+        
+        [KeyboardButton(text="Buxoro"), KeyboardButton(text="Qoraqalpoqiston")],
+        [KeyboardButton(text="Andijon"), KeyboardButton(text="Farg'ona")],
+        [KeyboardButton(text="Jizzax"), KeyboardButton(text="Qoshqidaryo")],
+        [KeyboardButton(text="Namangan"), KeyboardButton(text="Navoi")],
+        [KeyboardButton(text="Sirdaryo"), KeyboardButton(text="Samarqand")],
+        [KeyboardButton(text="Surxondaryo"), KeyboardButton(text="Xorazm")],
+        [KeyboardButton(text="Bosh sahifa"),KeyboardButton(text="Orqaga")],
+        
+    ],
+    resize_keyboard=True,
+    # one_time_keyboard=True,
+)
+
+# Toshkent ichidagi Yunusobod ichidagi buxoro
+buxaro = ReplyKeyboardMarkup(
+    keyboard=[
+        [KeyboardButton(text="Buxaro shaxri"), KeyboardButton(text="G'ijdivon")],
+        [KeyboardButton(text="Qorako'l"), KeyboardButton(text="Kogon")],
+        [KeyboardButton(text="Jondor"), KeyboardButton(text="Olot")],
+        [KeyboardButton(text="Peshku"), KeyboardButton(text="Qorovulbozor")],
+        [KeyboardButton(text="Romiton"), KeyboardButton(text="Shofirkon")],
+        [KeyboardButton(text="Vobkent"), KeyboardButton(text="Kogon shahri")],
+        
+        [KeyboardButton(text="Bosh sahifa"), KeyboardButton(text="Orqaga")],
+    ],
+    resize_keyboard=True,
+    # one_time_keyboard=True,
+)
+
+# --- Sonlar 
+numbers = ReplyKeyboardMarkup(
+    keyboard=[
+        [KeyboardButton(text="1"), KeyboardButton(text="2"),KeyboardButton(text="3"),KeyboardButton(text="4")],
+        [KeyboardButton(text="To'liq salon")],
+        [KeyboardButton(text="Bosh sahifa"), KeyboardButton(text="Orqaga")],
+
+    ],
+    resize_keyboard=True,
+)
+
+# --- Cars
+cars = ReplyKeyboardMarkup(
+    keyboard=[
+        [KeyboardButton(text="Cobalt"), KeyboardButton(text="Lacetti, Gentra")],
+        [KeyboardButton(text="Epica")],
+        [KeyboardButton(text="Bosh sahifa"), KeyboardButton(text="Orqaga")],
+
+    ],
+    resize_keyboard=True,
+)
+
+# -- Pitaka borish yoki shofyor oldiga kelishi
+pitak = ReplyKeyboardMarkup(
+    keyboard=[
+        [KeyboardButton(text="Pitakka boraman")],
+        [KeyboardButton(text="📍Kelib olib keting, lokatsiya yuboraman", request_location=True)],
+        [KeyboardButton(text="Bosh sahifa"), KeyboardButton(text="Orqaga")],
+
+    ],
+    resize_keyboard=True,
+)
+
+contact = ReplyKeyboardMarkup(
+    keyboard=[
+        [KeyboardButton(text="Telefon raqam", request_contact=True)],
+        [KeyboardButton(text="Bosh sahifa"), KeyboardButton(text="Orqaga")],
+    ],
+    resize_keyboard=True
+)
+
+# --- Toshkent ichidagi tumanlar uchun
+# t_viloyatlar = ReplyKeyboardMarkup(
+#     keyboard=[
+        
+#         [KeyboardButton(text="Buxoro"), KeyboardButton(text="Qoraqalpoqiston")],
+#         [KeyboardButton(text="Andijon"), KeyboardButton(text="Farg'ona")],
+#         [KeyboardButton(text="Jizzax"), KeyboardButton(text="Qoshqidaryo")],
+#         [KeyboardButton(text="Namangan"), KeyboardButton(text="Navoi")],
+#         [KeyboardButton(text="Sirdaryo"), KeyboardButton(text="Samarqand")],
+#         [KeyboardButton(text="Surxondaryo"), KeyboardButton(text="Xorazm")],
+#         [KeyboardButton(text="Bosh sahifa"),KeyboardButton(text="Orqaga")],
+        
+#     ],
+#     resize_keyboard=True,
+#     # one_time_keyboard=True,
+# )  
+
+
+# \\\ Surxondaryo ichidagi shaxar ///
+surxondaryo = ReplyKeyboardMarkup(
+    keyboard=[
+        [KeyboardButton(text="Angor"), KeyboardButton(text="Termiz(sh)")],
+        [KeyboardButton(text="Bandixon"), KeyboardButton(text="Boysun")],
+        [KeyboardButton(text="Denov"), KeyboardButton(text="Jarqo'rg'on")],
+        [KeyboardButton(text="Muzrobot"), KeyboardButton(text="Oltinsoy")],
+        [KeyboardButton(text="Qiziriq"), KeyboardButton(text="Qumqo'rg'on")],
+        [KeyboardButton(text="Sariosiyo"), KeyboardButton(text="Sherobod")],
+        [KeyboardButton(text="Sho'rchi"), KeyboardButton(text="Termiz")],
+        [KeyboardButton(text="Uzun")],
+        [KeyboardButton(text="Bosh sahifa"), KeyboardButton(text="Orqaga")],
+    ],
+    resize_keyboard=True,
+    # one_time_keyboard=True,
+)
+
 # --- Xorazm shaxarlar
 xorazm = ReplyKeyboardMarkup(
     keyboard=[
@@ -69,23 +161,6 @@ xorazm = ReplyKeyboardMarkup(
         [KeyboardButton(text="Qoʻshkoʻpir"), KeyboardButton(text="Shovot")],
         [KeyboardButton(text="Qorovul (qishloq)"), KeyboardButton(text="Yangiariq")],
         [KeyboardButton(text="Yangibozor (Yangibozor tumani)"), KeyboardButton(text="Pitnak")],
-        [KeyboardButton(text="Bosh sahifa"), KeyboardButton(text="Orqaga")],
-    ],
-    resize_keyboard=True,
-    # one_time_keyboard=True,
-)
-
-# \\\ Surxondaryo ichidagi shaxar ///
-surxondaryo = ReplyKeyboardMarkup(
-    keyboard=[
-        [KeyboardButton(text="Angor"), KeyboardButton(text="Termiz sh")],
-        [KeyboardButton(text="Bandixon"), KeyboardButton(text="Boysun")],
-        [KeyboardButton(text="Denov"), KeyboardButton(text="Jarqo'rg'on")],
-        [KeyboardButton(text="Muzrobot"), KeyboardButton(text="Oltinsoy")],
-        [KeyboardButton(text="Qiziriq"), KeyboardButton(text="Qumqo'rg'on")],
-        [KeyboardButton(text="Sariosiyo"), KeyboardButton(text="Sherobod")],
-        [KeyboardButton(text="Sho'rchi"), KeyboardButton(text="Termiz")],
-        [KeyboardButton(text="Uzun")],
         [KeyboardButton(text="Bosh sahifa"), KeyboardButton(text="Orqaga")],
     ],
     resize_keyboard=True,
@@ -108,20 +183,20 @@ andijon = ReplyKeyboardMarkup(
 )
 
 # --- Buxorodagi shaharlar
-buxaro = ReplyKeyboardMarkup(
-    keyboard=[
-        [KeyboardButton(text="Buxoro"),KeyboardButton(text="G'ijdivon")],
-        [KeyboardButton(text="Qorako'l"),KeyboardButton(text="Kogon")],
-        [KeyboardButton(text="Jondor"),KeyboardButton(text="Olot")],
-        [KeyboardButton(text="Peshku"),KeyboardButton(text="Qorovulbozor")],
-        [KeyboardButton(text="Romiton"),KeyboardButton(text="Shofirkon")],
-        [KeyboardButton(text="Vobkent"),KeyboardButton(text="Kogon shahri")],
-        [KeyboardButton(text="Buxaro shaxri")],
-        [KeyboardButton(text="Bosh sahifa"), KeyboardButton(text="Orqaga")],
-    ],
-    resize_keyboard=True,
-    # one_time_keyboard=True,
-)
+# buxaro = ReplyKeyboardMarkup(
+#     keyboard=[
+#         [KeyboardButton(text="Buxoro"),KeyboardButton(text="G'ijdivon")],
+#         [KeyboardButton(text="Qorako'l"),KeyboardButton(text="Kogon")],
+#         [KeyboardButton(text="Jondor"),KeyboardButton(text="Olot")],
+#         [KeyboardButton(text="Peshku"),KeyboardButton(text="Qorovulbozor")],
+#         [KeyboardButton(text="Romiton"),KeyboardButton(text="Shofirkon")],
+#         [KeyboardButton(text="Vobkent"),KeyboardButton(text="Kogon shahri")],
+#         [KeyboardButton(text="Buxaro shaxri")],
+#         [KeyboardButton(text="Bosh sahifa"), KeyboardButton(text="Orqaga")],
+#     ],
+#     resize_keyboard=True,
+#     # one_time_keyboard=True,
+# )
 
 # --- Farg'onadagi shaharlar
 fargona = ReplyKeyboardMarkup(
