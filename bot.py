@@ -1,3 +1,6 @@
+# Govno kod # :P
+
+
 from config import TOKEN
 import logging
 from aiogram import Bot, Dispatcher, executor, types
